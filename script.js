@@ -108,7 +108,6 @@ function createQuestion(i) {
     // inserir alternativas
     questions[i].answers.forEach((answer, j) => {
         // cria template botão quizz
-        // 🚨 CORRIGIDO: Busca o template (o botão com a classe 'answer-template') para clonar
         const answerTemplate = document.querySelector('.answer-template').cloneNode(true);
 
         // Preenche o texto da letra e da resposta
