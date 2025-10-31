@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizArt</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <header
+        class="p-10 pb-10 pr-10 pt-10 text-center font-bold font-sans text-4xl text-white bg-lime-400 momo-signature-regular shadow-xl">
+        QuizArt - Movimentos Artísticos
+    </header>
+
+    <main class="bg-slate-100 min-h-screen flex justify-center items-center p-10">
+
+        <article id="quizz-container" class="bg-white p-8 rounded-xl shadow-2xl max-w-lg w-full">
+            <h1 class="text-3xl font-bold text-gray-800 mb-6 border-b pb-3">
+                Questão <span id="question-number">1</span> de <span id="questions-qty-current">3</span>
+            </h1>
+
+            <p id="pergunta" class="text-xl font-semibold text-gray-700 mb-8">
+                <span id="question-text">Texto da Pergunta</span>
+            </p>
+
+            <div id="answers-box" class="flex flex-col">
+                <button class="answer-button hide answer-template">
+                    <span class="btn-letra">A</span>
+                    <span class="question-answer">Resposta Template</span>
+                </button>
+
+                </div>
+        </article>
+
+        <article id="score-container" class="bg-white p-10 rounded-xl shadow-2xl max-w-md w-full text-center hide">
+            <h2 class="text-4xl font-bold text-lime-600 mb-4">Quiz Finalizado!</h2>
+            <p class="text-xl text-gray-600 mb-8">Sua pontuação final é:</p>
+            <div class="mb-10 p-6 bg-lime-50 rounded-lg border-2 border-lime-400 inline-block">
+                <span id="display-score" class="text-6xl font-extrabold text-lime-700">0</span>
+                <span class="text-3xl font-bold text-lime-700">%</span>
+            </div>
+
+            <p class="text-lg text-gray-700 mb-6">
+                Você acertou <span id="correct-answers" class="font-bold text-lime-600">0</span> de
+                <span id="questions-qty-total" class="font-bold text-lime-600">0</span> perguntas.
+            </p>
+
+            <button id="restart"
+                class="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-3 px-6 rounded-lg transition duration-300 shadow-md">
+                <i class="bi bi-arrow-clockwise mr-2"></i> Jogar Novamente
+            </button>
+        </article>
+    </main>
+</body>
+
+</html>
