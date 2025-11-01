@@ -75,9 +75,9 @@ const questions = [
         question: 'O estilo Barroco do século XVII é famoso por usar uma técnica dramática de pintura que enfatiza o forte contraste entre áreas de luz e sombra. Qual é o nome dessa técnica?',
         answers: [
             { answer: 'Pontilhismo', correct: false, },
-            { answer: 'Sfumato', correct: true, },
+            { answer: 'Sfumato', correct: false, },
             { answer: 'Perspectiva Linear', correct: false, },
-            { answer: 'Claro-Escuro (Tenebrismo)', correct: false, },
+            { answer: 'Claro-Escuro (Tenebrismo)', correct: true, },
         ]
     },
 ];
