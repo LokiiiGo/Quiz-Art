@@ -1,41 +1,28 @@
-  /* Importação da fonte */
-        @import url('https://fonts.googleapis.com/css2?family=Momo+Signature&display=swap');
+/*
+ * O restante dos estilos vem do Tailwind CSS, referenciado no HTML.
+ * Este arquivo é para estilos que não são classes Tailwind.
+ */
 
-        .momo-signature-regular {
-            font-family: "Momo Signature", cursive;
-            font-weight: 400;
-            font-style: normal;
-        }
- 
-        /* Estilos customizados para o quiz */
-        .hide {
-            display: none !important;
-        }
+/* Esconde elementos que não devem ser exibidos */
+.hide {
+    display: none !important;
+}
 
-        /* Estilo para as respostas */
-        .answer-button {
-            /* Tailwind classes for styling the button */
-            @apply w-full flex items-center p-4 mb-4 bg-white border border-gray-300 rounded-lg text-lg font-medium shadow-md transition-all duration-300 hover:bg-gray-100 cursor-pointer;
-        }
+/* Estilo para a resposta correta */
+.correct-answer {
+    background-color: #34d399; /* Cor verde (Tailwind lime-500) */
+    color: white;
+    font-weight: bold;
+}
 
-        .btn-letra {
-            /* Tailwind classes for the letter circle */
-            @apply bg-lime-400 text-white font-bold w-8 h-8 flex justify-center items-center rounded-full mr-4 text-sm;
-        }
+/* Estilo para a resposta incorreta escolhida pelo usuário */
+.wrong-answer {
+    background-color: #f87171; /* Cor vermelha (Tailwind red-400) */
+    color: white;
+    font-weight: bold;
+}
 
-        /* Classes para indicar acerto ou erro */
-        .correct-answer {
-            @apply bg-green-200 border-green-500 shadow-lg !important;
-        }
-
-        .wrong-answer {
-            @apply bg-red-200 border-red-500 shadow-lg !important;
-        }
-
-        .correct-answer .btn-letra {
-            @apply bg-green-600 !important;
-        }
-
-        .wrong-answer .btn-letra {
-            @apply bg-red-600 !important;
-        }
+/* Estilo para o botão que foi desabilitado e não é o template */
+.answer-button:disabled:not(.answer-template) {
+    cursor: not-allowed;
+}
