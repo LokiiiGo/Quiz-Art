@@ -3,26 +3,22 @@
  * Este arquivo é para estilos que não são classes Tailwind.
  */
 
-/* Esconde elementos que não devem ser exibidos */
 .hide {
     display: none !important;
 }
 
-/* Estilo para a resposta correta */
 .correct-answer {
-    background-color: #34d399; /* Cor verde (Tailwind lime-500) */
+    background-color: #34d399;
     color: white;
     font-weight: bold;
 }
 
-/* Estilo para a resposta incorreta escolhida pelo usuário */
 .wrong-answer {
-    background-color: #f87171; /* Cor vermelha (Tailwind red-400) */
+    background-color: #f87171;
     color: white;
     font-weight: bold;
 }
 
-/* Estilo para o botão que foi desabilitado e não é o template */
 .answer-button:disabled:not(.answer-template) {
     cursor: not-allowed;
 }
