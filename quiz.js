@@ -14,7 +14,7 @@ let points = 0;
 let actualQuestionIndex = 0;
 let userAnswers = {}; // Objeto para armazenar as respostas do usuário
 
-// perguntas (Seu Array de perguntas com explicações)
+// perguntas
 const questions = [
     {
         question: 'Qual movimento artístico do século XIX é conhecido por seus artistas pintarem ao ar livre (en plein air), buscando capturar os efeitos da luz e da cor em um momento específico?',
